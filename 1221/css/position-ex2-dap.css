@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slide {
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid green;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide img {
+    float: left;
+    margin-right: 10px;
+    height: 280px;
+    /* hight 굳이 안주고 라인하이트 줘서 하면 영역잡힘. 너비도 안하면 100%다. */
+}
+.slide .controls a {
+    display: block;
+    line-height: 50px;
+    background-color: #333;
+    text-align: center;
+    color: #fff ;
+    width: 100px;
+    /* text-decoration: none; */
+    position: absolute;
+    top: calc(50% - 25px);
+    /* bottom: calc(50% - 25px);
+    white-space: nowrap; */
+    
+}
+.slide .controls .prev {
+    right: 100%;
+}
+.slide .controls .next {
+    left: 100%;
+}

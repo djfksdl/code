@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.color {
+    --hue:00;
+    --saturation: 50%;
+    --lightness: 50%;
+    width: 100px;
+    height: 150px;
+    /* 검정 */
+    background-color: hsl(200,  100%, 0%);
+    /* 흰색 */
+    /* background-color: hsl(hue, saturation, lightness); */
+    /* 순색 */
+    background-color: hsl(240,  100%, 30%);
+    /* 조금 어둡게 */
+    background-color: hsl(240, 100%, 70%); 
+    /* 조금 밝게 !important하면 그게 적용됨*/
+    /* 변수로 자유로이색상을 고친다 */
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+
+}

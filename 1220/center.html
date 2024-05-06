@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: royalblue;
+            position: relative;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* 방법1 -중간에 간다이해 또는 마진이라고생각=margin:auto와 같음 외국에서 많이씀*/
+            /* position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; */
+            /* 방법2 많이쓰는거임, 3번의 원리이다. */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px; */
+            /* 방법3 굉장히 많이 쓰는거임. 방법2와 같음 외우기*/
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            /* 방법4 굉장히 많이 쓰는거임 */
+            position: absolute;
+            top: calc(50% - (100px / 2));
+            left: calc(50% - (100px / 2));
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+</body>
+</html>

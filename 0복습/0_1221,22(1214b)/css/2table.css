@@ -1,0 +1,22 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 600px;
+}
+table ,th,td {
+    border: 2px solid red;
+    border-collapse: collapse;
+    
+}
+table thead th {
+    line-height: 100px;
+}
+
+table thead th:nth-child(1){
+    width: 100px;
+}

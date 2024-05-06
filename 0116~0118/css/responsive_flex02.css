@@ -1,0 +1,73 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+#wrap { width: 100%;}
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+}
+
+.logo {
+    flex: 1 0 auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}
+nav {flex: 3 0 auto;}
+/* flex-grow:남은 공간 4개에서 1개,3개로 영역이 들어감 */
+nav ul{display: flex;
+justify-content: space-around;}
+nav ul li{
+    line-height: 100px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+}
+nav ul li:hover {
+    color: #333;
+    text-decoration: underline;
+}
+#content{}
+#content .container{}
+
+#content article{ flex: 2 0 auto;}
+/* 슈링크는 기본적으로 줄어들지않는 설정으로 간다. */
+#content article ul{ display: flex;
+flex-wrap: wrap;} 
+#content article ul li{
+    flex: 1 0 50%;
+    /* 베이시스에 50%만차지하고 랩으로 개행된다. */
+    text-align: center; line-height: 160px; font-size: 2rem;
+}
+#content article ul .no1 {
+    background-color: #ccc;
+}
+#content article ul .no2 {
+    background-color: #eee;
+}
+
+#content aside{flex: 1 0 auto; background-color: #333; color: #fff; 
+    text-align: center; line-height: 320px;}
+
+footer {
+    text-align: center ; padding: 50px 0 ; 
+    background-color: #222; color: #eee;
+}
+@media screen and (max-width:768px){
+    .container {flex-direction: column;}
+    nav ul{flex-wrap: wrap;}
+    nav ul li{flex-basis: 33.333%; text-align: center; line-height: 50px;}
+    #content article ul li:nth-child(2n+1) {background-color: #ccc;}
+    #content article ul li:nth-child(2n) {background-color: #eee;}
+    aside{padding: 151px 0 ;}
+}

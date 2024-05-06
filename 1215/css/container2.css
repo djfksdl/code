@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.ul {
+    list-style: none;
+}
+/* ul에서 지울떄 초기화 */
+
+.container2 {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 600px;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+input {
+    margin auto;
+}
+.text2 {
+    height: 90px;
+    width: 600px;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+
+.text3 {
+    height: 50px;
+    width: 300px;
+    margin: 5px auto;
+}

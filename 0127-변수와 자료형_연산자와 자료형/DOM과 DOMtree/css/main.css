@@ -1,0 +1,10 @@
+*{ margin: 0; padding: 0; }
+body{
+    height: 100vh;
+    display: flex;
+    /* 가운데로 간다 */
+    flex-direction: column; 
+   /* 아래위로 */
+    justify-content: center;
+    align-items: center;
+}

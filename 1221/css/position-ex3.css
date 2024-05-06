@@ -1,0 +1,43 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+/* 공통영역 */
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.mainmenu {
+    background-color: #333;
+
+}
+li {
+    color: #fff;
+    
+}
+.mainmenu > li {
+    float: left;
+    margin-left: 50px;
+    line-height: 35px;
+    position: relative;
+}
+.mainmenu li ul {
+    background-color: #666;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+}
+.mainmenu > li:hover ul {
+    display: block;
+}
+.mainmenu li ul li{
+    white-space: nowrap;
+    padding: 0 10px;
+}

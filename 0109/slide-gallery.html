@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/slide-gallery.css">
+</head>
+<body>
+    <div class="cards">
+        <div class="swiper mySwiper1">
+            <!-- 밑에js와 myswiper는 내가 변경해도되지만 이름은 꼭 맞춰줘야한다 -->
+            <!-- 전체 너비는 줘야함. 위아래로 이동하면 높이를 잡아줘야한다! -->
+            <!-- li든 div든 상관없지만 클래스명은 중요하다 -->
+            <!-- 요기 밑에 있는 이름은 내가 변경하면 안됨 그대로 써야함 -->
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/000/fff" alt=""></li>
+              <!-- 사이즈/배경색/글자색 -->
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/000/f00" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/000/0f0" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/0f0/fff" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/00f/f00" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/f00/0f0" alt=""></li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- <div class="swiper mySwiper2">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/000/fff" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/000/f00" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/000/0f0" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/0f0/fff" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/00f/f00" alt=""></li>
+              <li class="swiper-slide"><img src="https://dummyimage.com/285x280/f00/0f0" alt=""></li>
+            </ul>
+          </div> -->
+      
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // 슬라이드의 설정
+        // var swiper = 
+        new Swiper(".mySwiper1", {
+            direction: "horizontal",
+            // direction:"vertical",거의 수평으로쓰인다.
+            autoplay: true,
+            loop: true,
+            slidesPerView: 3,
+            // 3개씩 보이게 한다. 5개 넣으면 달라붙는다. 맞추려고 사이드 줄어듦. 오버플로우 생기면서 잘린다.따라서 전체 사이즈 1200은 중요하다.4개씩 넣으면 15픽셀씩 마진이 자동으로 주어진다.'per=마다' 라는 뜻 
+            slidesBeTween: 60,
+            // 박스와 마진으로 400px 차지, 60을 주면 안맞춰진다.전체 너비가 있ㄴ는 상황에선 비트윈값으로 안맞춰진다. slidsperview없애면 한개만 나옴. 원래는 마진처럼 간격을 주는건데 전체 슬라이드 사이즈가 정해져있으면 의미가 없다. 주나 안주나 안먹음 전체 1200을 없애면 마진 100만 먹고 오토는 안먹음 여전히 펄뷰가 중요하다. 비트윈보다.
+            
+            navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        //   네비게이션 중에 el붙은건 eliment 넥스트버튼 기능은 태그로 얘를 연결하겠다는 뜻.
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        clickable:true}
+        // .swiper-pagination태그를 연결하겠다.
+        // clickable:클릭하면 누르는곳으로 이동
+        });
+        // new는 생성자: 붕어빵 만드는 틀 새로운 붕어빵 만드는데 그 붕어빵이름이 마이 스와이퍼다. 하나 슬라이드 만들건데 뉴와이퍼다 {안에는 설정들어감} 마이스와이퍼란 이름 맞춰주면 돌아감. 
+    </script>
+     <script>
+        new Swiper(".mySwiper2", {
+            direction: "horizontal",
+            autoplay: true,
+            loop: true,
+            slidesPerView: 4,
+              
+        });
+        
+    </script>
+</body>
+</html>

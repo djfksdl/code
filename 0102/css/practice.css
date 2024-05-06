@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+    /* li나 ul에 해도 됨  */
+    width: 400px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    /*  */
+}
+
+li span {
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    display: block;
+    width: 400px;
+    /* height: 200px; 안줘도됨  */
+    line-height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* span 말고 div써도 상관없음 */
+li:hover span {
+    top: 0;
+    left: 0;
+    transition: all .5s;
+}

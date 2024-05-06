@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.cards {
+    width: 1200px ;
+    margin: 100px auto;
+}
+/* .clear::after {
+    content: '';
+    clear: both;
+    display: block;
+} */
+.mySwiper1 {
+    width: 1200px;
+    /* 셋팅된 애들이 우선이다. 물론 선택자를 줘서 바꿀순 있긴함 */
+}
+/* clear:after해도 먹긴함 */
+/* .cards .slide-box {
+    float: left;
+    width: 285px;
+    height: 285px;
+    margin-right: 20px;
+     사이 간격 줄이려고했는데 안먹음
+} */
+
+.cards .slide-box:nth-child(1) {
+    background-color: darkcyan;
+}
+.cards .slide-box:nth-child(2) {
+    background-color: darkgreen;
+}
+.cards .slide-box:nth-child(3) {
+    margin-right: 0;
+    background-color: darkorchid;
+}

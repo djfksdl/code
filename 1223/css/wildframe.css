@@ -1,0 +1,145 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.clear::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#header {}
+#header .container{
+    
+    background-color: antiquewhite;
+    position: relative;
+}
+#header .container .logo{
+    width: 150px;
+    height: 100px;
+    background-color: aqua;
+}
+
+#header .container .gnb {
+    width: 100%;
+    background-color: #FF6F91;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+#header .container .gnb .depth1 {
+    background-color: #FF6F91;
+    float: right;
+    margin-top: -40px;
+    margin-right: 30px;
+}
+#header .container .gnb .depth1 > li {
+    float: left;
+}
+#header .container .gnb .depth1 > li>a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+
+}
+#header .container .gnb .depth1 > li:hover>a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#header .container .gnb .depth2 {
+    display: none;
+}
+#header .container .gnb .depth1:hover .depth2 {
+    display: block;
+}
+#header .container .gnb .depth2 li {}
+#header .container .gnb .depth2 li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    text-align: center;
+}
+#header .container .gnb .depth1 > li .depth2 li:hover a {
+    color: aliceblue;
+    font-weight: bold;
+}
+/* 이미지 슬라이드 */
+.visual {
+  
+}
+.visual .container {
+    width: 100%;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+/* 콘텐츠 */
+#main .container {
+    background-color: blanchedalmond;
+    height: 200px;
+}
+#main .container .notice{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+}
+#main .container .gallery{
+    width: 400px;
+    height: 200px;
+    background-color: violet;
+    float: left;
+}
+#main .container .banner{
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    float: left;
+}
+
+/* 푸터 */
+#footer {
+    background-color: bisque;
+}
+#footer .container {
+    background-color: gray;
+    height: 100px;
+}
+#footer .container .logo2{
+    width: 150px;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+#footer .container .f-menu{
+    width: 1050px;
+    height: 50%;
+    float: left;
+    background-color: aquamarine;
+}
+#footer .copyright{
+    width: 1050px;
+    height: 50%;
+    float: left;
+    background-color: brown;
+}

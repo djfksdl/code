@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 공통영역 */
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+/* .left {
+    float: left;
+} */
+.cover {
+    
+    padding: 50px 100px 0;
+}
+.colum   {
+    width: 33.333%;
+    float: left;
+    background-color: darkolivegreen;
+    min-width: 300px;
+}
+.wrapper {
+    margin: 30px;
+    background-color: yellowgreen;
+    padding: 30px;
+}
+.wrapper h1, .wrapper p {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper link -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <!-- material icons -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+      <!-- 메인 css link 위에 둘이 들어가야함 -->
+    <link rel="stylesheet" href="css/fourslide.css">
+    
+</head>
+<body>
+    <div class="inner">
+        <!-- 이너 꼭 안해도 되지만 여기선 이너있다는 설정주고한거라 씀 -->
+        <div class="swiper sw-basic">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/pexels-cats-coming-1543793.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-cats-coming-674570.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-francesco-ungaro-96938.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-septimiu-lupea-669015.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/pexels-kelvin-valerio-617278.jpg" alt=""></div>
+           
+            </div>
+
+            <div class="swiper-pagination"></div>
+            
+        </div>
+        <div class="btn-next">
+            <!-- 원래거 없애려면 이름 바꿈 근데 둘다 사라짐 밑에도 수정해야함-->
+            <span class="material-icons">
+                chevron_right
+            </span>
+        </div>
+        <div class="btn-prev">
+            <span class="material-icons">
+                chevron_left
+            </span>
+                
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            new Swiper(".sw-basic",{
+                // 새로운 생성자 스와이퍼다.라는 뜻
+                autoplay: true,
+                loop:true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                // 페이지네이션안에 들어갈 요소라 라는 뜻
+                slidesPerView: 4,
+                // 마진도 자연적으로 생김.
+                spaceBetween: 30,
+                // 마진주려면 요거쓰기 30px이라는 뜻,마지막이미지가 슬라이드에 딱 맞게
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                    // 이름만 바꿔지는게 아니라 원래 설정의 위치, 모양이 다 사라져서 css설정해줘야함
+                },
+            })
+            
+        </script>
+    
+    
+</body>
+</html>

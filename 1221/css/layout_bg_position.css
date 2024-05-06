@@ -1,0 +1,61 @@
+@charset 'utf-8';
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 1px;
+    position: relative;
+}
+.main-title {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+.main-content {
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-button {
+    width: 150px;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    /* padding: 15px; */
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    margin: 0 auto; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.explain-box {
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #eee;
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    /* absolut쓰려면 웹브라우져를 기준으로 잡아서 계산해서 해야함. 나중에 백이랑 박스 묶는 컨테이너 만들어서 rel써도 되긴함. */
+
+}
+.explain-box h4 {
+    margin-bottom: 15px;
+}

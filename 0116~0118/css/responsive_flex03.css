@@ -1,0 +1,113 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol, ul {
+    list-style: none;
+}
+
+#wrap {width: 100%;}
+.container {display: flex;}
+.section {
+    max-width: 1000px;
+    /* 반응형이라 max-width주기 */
+    margin: 0 auto;
+}
+header {
+    box-shadow: 0 5px 20px #ccc;
+    /* 그림자가 나올 공간이 없어서 바닥에만 나온다. */
+}
+.logo{
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+header ul {display: flex;}
+header ul li {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #aaa;
+}
+header ul li:hover {
+    background: linear-gradient(to bottom,transparent 0%,rgba(238,238,238,0.5));
+}
+.pc-nav {flex: 5 0 auto;}
+.pc-nav ul {
+    /* justify-content: space-between; 안줘도 20%씩 잘 나뉘어 있음*/
+}
+.pc-nav ul li{
+    flex: 0 0 20%;
+    line-height: 80px;
+}
+.hamburger{
+    flex: 0 0 40px;
+    align-self: center;
+    /* 한개있을때만 씀 중간에 오겠다는 건데. */
+    cursor: pointer;
+    display: none;
+    margin: 0 20px;
+
+}
+.hamburger span{
+    display: block;
+    height: 6px;
+    background: #333;
+}
+.hamburger span+span {
+    margin-top: 6px;
+}
+/* mobile nav */
+nav{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 5px 10px #ccc;
+    top: 70px;
+}
+.mobile-navi{
+    
+}
+.mobile-navi ul{}
+.mobile-navi ul li{
+    flex: 0 0 100%;
+    padding: 15px;
+}
+#content {padding: 4rem 0;}
+#content .container {}
+#content article {
+    flex: 3 1 auto;
+    order: 2; 
+    background-color: #eee; 
+    text-align: center; 
+    padding: 10rem 0;}
+#content aside {
+    flex: 1 1 auto; 
+    text-align: center; 
+    color: #fff; 
+    padding: 10rem 0;
+}
+#content .side01 {
+    order: 1;
+    background-color: #333;
+}
+#content .side02 {
+    order: 3;
+    background-color: #555;
+}
+footer {
+    border-top: 2px solid #ccc;
+    padding: 3rem 0 ;
+    text-align: center;
+}
+@media (max-width:768px){
+    .mobile-navi ul{flex-direction: column;}
+    .pc-nav{display: none;}
+    .hamburger{display: block;}
+    #content .container{flex-direction: column;}
+    #content .side01{order: 1;}
+}

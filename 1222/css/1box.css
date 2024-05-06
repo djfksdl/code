@@ -1,0 +1,39 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear   {
+    clear: both;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.container .head {
+    height: 100px;
+    background-color: #F0FF42;
+}
+.container .slide {
+    height: 300px;
+    background-color: #82CD47;
+}
+.container .h {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+.container .notice  {
+    background-color: #E1FFB1;
+}
+.container .gallary  {
+    background-color: #C7F2A4 ;
+}
+.container .banner  {
+    background-color:#B6E388;
+}
+.container .footer {
+    height: 100px;
+    background-color: #54B435;
+}

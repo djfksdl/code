@@ -1,0 +1,59 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.clear::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+li {
+    /* color: #fff; */
+}
+.mainmenu {
+    background-color: #333;
+}
+.mainmenu > li {
+    float: left;
+    /* width: 100px; */
+    margin-left: 50px;
+    line-height: 35px;
+    text-align: center;
+    position: relative;
+    
+}
+.mainmenu > li >ul {
+    background-color: #666;
+    /* display: none; */
+    position: absolute;
+    /* position:absolute 주면 뜬다. 그래서 내용물 만큼만 잡힘 따라서 너비랑 줘야함 */
+    left: 50%;
+    /* top: -200px; */
+    transform: translateX(-50%);
+    transition: top .5s;
+    /* transition: transform 3s; */
+    z-index: -1;
+    /* 메뉴 안덮고 밑으로 보내기 위해서  */
+    top:50px;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    /* opacity 투명도 조절. 0으로 하면 아예 안보임 그러나 영역에서 잡힘*/
+    /* visibility 는 보이는거 조절 오퍼시티랑 같이 쓰임 ? */
+    
+}
+.mainmenu > li:hover ul {
+    top: 100%;
+    /* reletive된곳에서 기준이다. top:35px이랑 같음 */
+    opacity: 1;
+    visibility: visible;
+    /* transform: translate(-50%); */
+}
+.mainmenu > li >ul > li {
+    width: 100px;
+}

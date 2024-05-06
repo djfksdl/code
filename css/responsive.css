@@ -1,0 +1,50 @@
+
+@media screen and (max-width: 1055px ) {
+    /* 메뉴 */
+    header .menu {
+        /* height: 96px; */
+        height: 96px;
+        width: 100%;
+        position: relative;
+        top:0;
+    }
+    header .menu h1 {
+        margin-left: 5%;
+    }
+    header .menu nav{
+        display: none;
+    }
+    /* 메인슬라이드 */
+    .m_v_Swiper {
+        width: 100%;
+        margin-left:0;
+    }
+    .m_v_Swiper .swiper-slide a img{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 700px ) {
+   html {
+        overflow-y: auto;
+    }
+    /* 헤더 */
+    header .top_banner{
+        height: 25px;
+    }
+    header .top_banner a{
+        line-height: 25px;
+        font-size: 12px;
+    }
+    header .menu {
+        height: auto;
+    }
+    header .menu h1>  a> img{
+        width: auto;
+        height: 50px;
+        vertical-align: top;
+    }
+
+    .val_e {
+        height: 900px;
+    }
+}

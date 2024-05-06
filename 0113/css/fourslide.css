@@ -1,0 +1,102 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.ttf)
+    format('truetype')
+  }
+  /* 폰트페이스 위치는 여기다 */
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 컨테이너 1000 이미지 870 이미지는 200 margin-right: 33 */
+
+.inner {
+    width: 1000px;
+    margin: 100px auto;
+    height: 300px;
+    position: relative;
+}
+.sw-basic {
+    width: 870px;
+    height: 250px;
+    /* 보이는 창을 의미함. */
+}
+.sw-basic .swiper-slide {
+  width: 200px;
+  height: 200px;
+  
+}
+.sw-basic .swiper-slide img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    vertical-align: top;
+}
+.inner .sw-basic .swiper-pagination {
+    bottom: 20px;
+}
+.sw-basic .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+}
+.btn-next, .btn-prev {
+    position: absolute;
+    display: block;
+    top:41%;
+    /* 50프로는 250의 가운데라 밑으로 좀 쳐져있음.그래서 조정해보고 올림 */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+    /* background-color: #333; */
+    background-color: rgba(100, 75, 75, .6);
+    /* opacity: .6;으로 줘도 됨 rgba안하고 */
+    border-radius: 50%;
+    text-align: center;
+    /* 글자품는 부모에 얼라인 센터 해줘야함 */
+    cursor: pointer;
+    /* 커서가 손가락으로 바뀜. 클릭한다 */
+}
+.btn-next{
+    left: 94%;
+    /* right: 6%해도됨 */
+}
+.btn-prev{
+    right: 94%;
+}
+.btn-next .material-icons, .btn-prev .material-icons{
+    color: #fff;
+    font-size: 28px;
+    /* 디폴트는 24로 위에 설정되어있다 */
+    line-height: 40px;
+ 
+}

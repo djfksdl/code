@@ -1,0 +1,39 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+caption {
+    text-align: left;
+    line-height: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+thead th {
+    width: 55px;
+    background-color: aquamarine;
+}
+thead th:nth-child(1) {
+    color: red; 
+}
+thead th:nth-child(7), tbody td:nth-child(7){
+    color: blue;
+}
+thead th, td {
+    height: 50px;
+}
+.g {
+    color: gray;
+}
+tbody td {
+    text-align: center;
+}
+.r {
+    color: red;
+}

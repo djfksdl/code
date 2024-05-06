@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>필수입력</legend>
+            <p>
+                <label for="username">이름 : </label>
+                <input type="text" placeholder="성명입력란" required id="username" name="username" minlength="2" maxlength="8">
+            </p>
+            <p>
+                <label for="usermail">이메일 : </label>
+                <input type="email" placeholder="전자우편.." name="umail" id="usermail" required>
+            </p>
+            <p>
+                <label for="userpw">비밀번호</label>
+                <input type="password" id="userpw" name="userpw" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>부가입력</legend>
+            <div>
+                <label for="address">거주지를 선택하세요</label>
+                <select name="address" id="address">
+                    <option value="서울시">서울시</option>
+                    <option value="경기도">경기도</option>
+                    <option value="제주도">제주도</option>
+                </select>    
+            </div>
+            <div>
+                <h2>성별을 선택해 주세요</h2>
+                <label for="">남성</label>
+                <input type="radio" id="man" value="남성" name="gender">
+                <label for="">여성</label>
+                <input type="radio" id="woman" value="여성" name="gender">
+            </div>
+        <div>
+            <h2>관심사항 체크</h2>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="interest" id="HTML" value="HTML">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="interest" id="css" value="CSS">
+            <label for="javascript">javascript</label>
+            <input type="checkbox" name="javascript" id="interest" value="javascript">
+        </div>
+        </fieldset>    
+        <fieldset>
+            <legend>HTML5 새로운 타입</legend>
+            <div>
+                <label for="website">website</label>
+                <input type="url" id="website" name="website">
+            </div>
+            <div>
+                <label for="birth">생년월일</label>
+                <input type="date" id="birth" name="birth">
+            </div>
+            <div>
+                <label for="langs">학습할 언어 선택</label>
+                <input id="langs" name="langs" list="mylist">
+                <datalist id="mylist">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="javascript">javascript</option>
+                </datalist>    
+            </div>
+            <div>
+                <label for="career">경력기간</label>
+                <input type="number"id="career" name="career" min="0" max="15" value="1" step="2" >
+            </div>
+            <div>
+                <label for="language">학습언어 선택</label>
+                <select name="language" id="language">
+                    <optgroup label="Frontend">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                    </optgroup>    
+                    <optgroup label="Backend">
+                        <option value="asp">asp</option>
+                        <option value="jsp">jsp</option>
+                        <option value="php">php</option>
+                    </optgroup>
+                </select>
+
+            </div>
+            <div>
+                <label for="skill">숙련도</label>
+                <input type="range" id="skill" name="skill" min="0" max="10" value="5">
+            </div>
+            <div>
+                <label for="phone">phone</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{1,11}" maxlength="11" title="숫자만 최대 11자리까지 입력하세요">
+            </div>
+            <div>
+                <label for="usermails">이메일 선택</label>
+                <input type="text" id="usermails" name="usermails">@
+                <select title="이메일 서비스 선택" multiple size="2">
+                    <option value="직접입력">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                </select>
+            </div>
+        </fieldset>
+        <progress value="3" max="10" min="0"></progress>
+        <div>
+            <label for="memo">메모</label>
+            <textarea name="memo" id="memo" cols="20" rows="4" placeholder="남길 말씀이 있다면 shut up.."></textarea>
+        </div>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+</html>

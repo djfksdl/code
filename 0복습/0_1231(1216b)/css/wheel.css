@@ -1,0 +1,12 @@
+@charset 'utf-8';
+.color {
+    --hue:200;
+    --saturation:50%;
+    --lightness:50%;
+    width: 100px;
+    height: 150px;
+    /* background-color: hsl(200, 100%, 0%); */
+    /* background-color: hsl(240, 100%, 30%); */
+    /* background-color: hsl(240, 100%, 70%); !important */
+    background-color: hsl(var(--hue),var(--saturation),var(--lightness));
+}

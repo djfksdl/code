@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/responsive-flex04.css">
+</head>
+<body>
+    <div id="wrap">
+        <header class="section">
+            <div class="container">
+                <div class="logo">LOGO</div>
+                <nav>
+                    <ul class="pc-menu">
+                        <!-- (li>a[#])*5 -->
+                        <li><a href="#">pc-list</a></li>
+                        <li><a href="#">pc-list</a></li>
+                        <li><a href="#">pc-list</a></li>
+                        <li><a href="#">pc-list</a></li>
+                        <li><a href="#">pc-list</a></li>
+                    </ul>
+                    <div class="mb-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+                <!-- mobile menu -->
+                <ul id="mobile">
+                    <li><a href="#">mobile-list</a></li>
+                    <li><a href="#">mobile-list</a></li>
+                    <li><a href="#">mobile-list</a></li>
+                    <li><a href="#">mobile-list</a></li>
+                    <li><a href="#">mobile-list</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="slide">
+                <img src="images/KakaoTalk_20230118_163225183.jpg" alt="밥상머리">
+            </section>
+            <section id="content" class="section">
+                <div class="container">
+                    <div class="banner">
+                        <dl>
+                            <dd>1</dd>
+                            <dd>2</dd>
+                            <dd>3</dd>
+                            <dd>4</dd>
+                        </dl>
+                    </div>
+                    <aside>SIDE TEXT</aside>
+                </div>
+                <div id="banner-02">
+                    <h3>BANNER02 TEXT</h3>
+                    <span></span>
+                    <p>
+                        Responsive Web<br>
+                        Responsive Web<br>
+                        Responsive Web
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="section">
+                <ul>
+                    <li>f-menu</li>
+                    <li>f-menu</li>
+                    <li>f-menu</li>
+                    <li>f-menu</li>
+                    <li>f-menu</li>
+                    <li>f-menu</li>
+                    <li>f-menu</li>
+                </ul>
+                <span></span>
+                <address>responsive webresponsive webresponsive webresponsive webresponsive web<br>
+                    responsive webresponsive web </address>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.mb-menu-btn').click(function(){
+                    $('#mobile').stop().slideDown();
+                })
+                $('#mobile').mouseleave(function(){
+                    $('#mobile').stop().slideUp();
+                })
+            })
+        </script>
+    </div>
+</body>
+</html>

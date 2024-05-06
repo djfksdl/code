@@ -1,0 +1,301 @@
+@charset 'utf-8';
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    vertical-align: top;
+}
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+/* 헤더 */
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    /* 헤더 만들때 꼭 줘야함. 안그럼 밑에 글자보임 */
+    /* height: 60px; */
+    background-color: white;
+}
+/* fixed는 너비 100 분명히 정해줘야지 안그럼 떠있는거라 내용만큼만 너비가 잡힌다. */
+.fixed .navigation {
+    box-shadow: 3px 3px 7px -3px #333;
+}
+.fixed .navigation ul {}
+.fixed .navigation ul li {
+    display: inline-block;
+    /* inine-block 둘다 쓸때 너비도 줘야하니까! */
+    width: 100px;
+}
+.fixed .navigation ul li a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.fixed .navigation ul li a:hover {
+    color: white;
+    background-color: #333;
+}
+/* .fixed .navigation ul li a:active {
+    background-color: #000;
+    font-size: 15px;
+} */
+/* 클릭했을때 반응 */
+
+/* .fixed .navigation ul li a:visited  {
+    color: red;
+} */
+/* content영역 */
+.content {
+    width: 1100px;
+    height: 920px;
+    /* margin: 0 auto; 이렇게 하면 헤더 밑으로 들어감 */
+    margin: 60px auto;
+    /* background-color: red; */
+    padding: 20px;
+}
+/* 왼쪽 영역 */
+.content .col-left{
+    width: 170px;
+    height: 900px;
+    margin-right: 20px;
+    /* background-color: brown; */
+}
+.content .col-left .sidebar{
+    width: 100%;
+    height: 750px;
+    box-shadow: 3px 3px 15px -7px #333;
+    /* background-color: #333; */
+}
+.content .col-left .sidebar .sticky {
+    position: sticky;
+    top: 70px;
+    width: 170px;
+    height: 450px;
+}
+.content .col-left .sidebar .sticky input[type=text]{
+    width: 130px;
+    margin: 20px;
+    padding: 10px;
+    /* 글자와 박스 사이 간격 넓히기위해 */
+    color: #fff;
+    background-color: #333;
+    border: none;
+    outline: none;
+}
+.content .col-left .sidebar .sticky input::placeholder{
+    color: white;
+}
+.content .col-left .sidebar .sticky ul{}
+.content .col-left .sidebar .sticky ul li{}
+/* float만 주면 됨. 근데 여기선 일단 필요없음 */
+.content .col-left .sidebar .sticky ul li a {
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    /* height주는 개념으로 패딩써도됨 */
+    text-align: center;
+    color: #333;
+}
+.content .col-left .sidebar .sticky ul li a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+/* 중간영역 */
+.content .col-mid {
+    width: 650px;
+    height: 900px;
+    margin-right: 20px;
+    /* background-color: darkcyan; */
+}
+.content .col-mid .banner{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 40px;
+    background-color: burlywood;
+    position: relative;
+}
+.content .col-mid .banner img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    /* 어떤 대상을 커버가 되게 핏한다. 백그라운드 이미지에서의 커버와 같은 뜻 그 뒤에 사이즈 줘야 그에 맞게 커버가 된다-> 아래위로 잘리고 가운데 나옴 너비 기준으로 사이즈가 측정되었다 이 이미지는 높이가 길어서 잘라서 커버되었다. */
+    
+}
+.content .col-mid .banner .heading {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 350px;
+    background-color: rgba(255, 255, 255,.5);
+}
+.content .col-mid .banner .heading h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.content .col-mid .banner .heading p{
+    font-size: 20px;
+    line-height: 30px;
+    /* line-height:1.5;와 같다. p태그는 꼭 라인하이트 주의! */
+}
+.content .col-mid .banner .heading p a {
+    /* display: block;하면 떨어져버림 인라인은ㅇ 가능할듯 */
+    padding: 5px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+.content .col-mid .banner .heading p a:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    /* 흰색이라 보더 넣어줘야함 */
+}
+.ribbon_t {
+    /* 순위 관꼐 없이 한번만 쓰이니까 줄줄이 안써도됨 */
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    background-color: #333;
+}
+.ribbon_b {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background-color: #333;
+}
+.content .col-mid .profile{
+    width: 100%;
+    height: 280px;
+    /* background-color: crimson; */
+    box-shadow: 3px 3px 15px -7px #333;
+    position: relative;
+}
+
+.content .col-mid .profile .pro_img{
+    width: 240px;
+    padding: 20px;
+}
+.content .col-mid .profile .pro_img img{
+    width: 200px;
+    height: 200px;
+    /* 높이 안주면 타원형됨 */
+    border-radius: 50%;
+    object-fit: cover;
+}
+.content .profile h3{
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+.content  .profile p{
+    left: 260px;
+    top: 30px;
+    position: absolute;
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/* 오른쪽영역 */
+.content .col-right {
+    width: 200px;
+    height: 900px;
+    /* background-color: coral; */
+}
+.content .col-right .forum{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 40px;
+    /* background-color: violet; */
+    overflow: auto;
+}
+.content  .forum h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.content  .forum .article{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.content  .forum .article h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.content  .forum .article p{
+    font-size: 13px;
+    line-height: 1.4;
+}
+/* 뉴스레터 영역 */
+.content .col-right .newsletter{
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    background-image: linear-gradient(-30deg, darkcyan,#fff 120%);
+    /* background-color: blue; */
+}
+
+.content .col-right .newsletter h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.content .col-right .newsletter .article {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid #333;
+    
+}
+.content .col-right .newsletter .article h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.content .col-right .newsletter .article p{
+    font-size: 13px;
+    line-height: 1.4;
+    /* border-bottom: 1px solid #333; */
+}
+
+/* footer영역 */
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    padding: 20px;
+}

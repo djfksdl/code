@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.container {
+    width: 1230px;
+    margin: auto;
+}
+.box {
+    width: 400px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+
+}
+.youtube {
+    width: 400px;
+    height: 227px;
+   
+}
+.text1 {
+    line-height: 50px; color: rgb(43, 43, 44);
+    text-align: center;
+    font-size: 28px;
+    
+}
+.text2 {
+    color: rgb(34, 33, 34);
+    padding-bottom: 10px;
+    padding: 10px 10px;
+}
+.box2 {
+    background-color: rgb(235, 235, 235);
+    border: 3px ;
+    border-radius: 3%;
+    height: 180px;
+    margin-bottom: 20px;
+
+}

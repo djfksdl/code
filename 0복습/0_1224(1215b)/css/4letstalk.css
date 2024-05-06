@@ -1,0 +1,49 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+
+}
+h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.2;
+}
+p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+#name , #email , #subject {
+    width: 500px;
+    height: 50px;
+    margin: 7px auto;
+    padding: 15px;
+}
+#message {
+    display: block;
+    width: 500px;
+    margin: 7px auto;
+    padding: 10px;
+}
+.submit  {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    color: aliceblue;
+    margin: 20px auto ;
+    display: block;
+    border-radius: 10px;
+}
+.submit:hover {
+    background-color: black;
+    color: aqua;
+}

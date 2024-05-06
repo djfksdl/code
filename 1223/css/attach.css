@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 110px 0;
+}
+.pick-your-favrite {
+    width: 100%;
+    display: block;
+    background-image: url(../images/favorite_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed ;
+    background-size: cover;
+
+}
+.text-group{
+    width: 400px;
+    margin-left: 100px;
+}

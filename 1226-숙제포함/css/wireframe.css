@@ -1,0 +1,115 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clear::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.container {
+    width: 1000px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+.leftcon {
+    width: 200px;
+    float: left;
+
+}
+
+.leftcon .logo {
+  width: 200px;
+  height: 150px;
+  background-color: mediumaquamarine;
+    
+}
+.leftcon .menu {
+   
+}
+.leftcon .menu .depth1{}
+.leftcon .menu .depth1 li{   
+}
+.leftcon .menu .depth1 li >a{
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+    display: block;
+    
+}
+.leftcon .menu .depth1 li  .depth2{}
+.leftcon .menu .depth1 li  .depth2 li{
+    display: none;
+}
+.leftcon .menu .depth1 li:hover  .depth2 li{
+    display: block;
+    
+}
+.leftcon .menu .depth1 li  .depth2 li
+{
+
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.rightcon {
+    width: 800px;
+    height: 500px;
+    background-color: yellowgreen;
+    float: left;
+}
+.rightcon .slide{
+    width: 800px;
+    height: 400px;
+    background-color: chocolate;
+   
+}
+.rightcon .three{}
+.rightcon .three .notice{
+    width: 33.333%;
+    height: 300px;
+    background-color: darkblue;
+    float: left;
+}
+.rightcon .three .gallery{
+    width: 33.333%;
+    height: 300px;
+    background-color: darkcyan;
+    float: left;
+}
+.rightcon .three .link{
+    width: 33.333%;
+    height: 300px;
+    background-color: darkgray;
+    float: left;
+}
+.rightcon .bottom{
+    width: 800px;
+    height: 100px;
+}
+.rightcon .bottom .logo2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    float: left;
+}
+.rightcon .bottom .b-menu{
+    height: 50%;
+    background-color: coral;
+}
+.rightcon .bottom .copy{
+    height: 50%;
+    background-color: blueviolet;
+}

@@ -1,0 +1,81 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+section {
+    background-color: #f2f4f7;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    height: 110px;
+    /* background-color: pink; */
+    
+}
+
+.container .depth1 {}
+.container .depth1 li{
+    float: left;
+    margin: 7px auto;
+    width: 280px;
+    /* background-color: aqua; */
+    
+}
+
+
+.container .depth1 li a { 
+    line-height: 84px;
+    display: block;
+    padding-left: 100px;
+    /* text-align: center; */
+    font-size: 17px;
+    border-right: 1px solid #333;
+    /* background-color: pink; */
+}
+
+li:first-child a {
+    background-image: url(../images/one.svg) ;
+    background-repeat: no-repeat;
+    background-size: 56px ;
+    background-position: 30px center;
+}
+li:nth-child(2) a {
+    background-image: url(../images/two.svg) ;
+    background-repeat: no-repeat;
+    background-size: 56px ;
+    background-position: 30px center;
+}
+li:nth-child(3) a {
+    background-image: url(../images/three.svg) ;
+    background-repeat: no-repeat;
+    background-size: 56px ;
+    background-position: 30px center;
+}
+li:nth-child(4) a {
+    background-image: url(../images/four.png) ;
+    background-repeat: no-repeat;
+    background-size: 56px ;
+    background-position: 30px center;
+}
+li:nth-child(5) a {
+    background-image: url(../images/five.png) ;
+    background-repeat: no-repeat;
+    background-size: 56px ;
+    background-position: left center;
+    
+}

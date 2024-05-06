@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{background: url(images/KakaoTalk_20230116_172710409.jpg) no-repeat ;
+            /* 현재 위치면 그냥 적어도되고 './images/~~~'해도된다 */
+        background-size: cover;    
+        display: flex; justify-content: center; align-items: center;
+        height: 100vh; 
+        /* 높이를 잡아줘야 align-items:center로 간다. 너비는 100%로 해도 되긴하지만... 높이는 끊임없으니께 */
+        /* vh는 디바이스나 창의 너비가 100%로가 되는거다 */
+        }
+        button {
+           
+            border-radius: 5px;
+            background-color: #ccc;
+            font-size: 1.2em;
+            padding: 1em 2em;
+            border: none;
+            box-shadow: 1px 1px 2px #fff;
+        }
+    </style>
+</head>
+<body>
+    <button>클릭!</button>
+</body>
+</html>

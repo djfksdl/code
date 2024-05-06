@@ -1,0 +1,139 @@
+@charset 'utf-8';
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+/* 공통영역 */
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: aliceblue; */
+}
+/* header */
+#header {}
+#header .container {
+    height: 100px;
+    background-color: #FFFBE9;
+    position: relative;
+}
+#header .container .logo{
+    width: 150px;
+    height: 100px;
+    background-color: #FFD4B2;
+}
+/* memu또는 네비게이션 영역 */
+#header .container .depth1{
+    position: absolute;
+    right: 0;
+    top:60px;
+}
+
+
+#header .container .depth1 > li{
+    float: left;
+    /* width: 150px; */
+}
+#header .container .depth1 >li > a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;    
+}
+#header .container .depth1 >li:hover > a {
+    background-color: red;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#header .container .depth1 li .depth2{
+    display: none;
+}
+#header .container .depth1:hover .depth2 {
+    display: block;
+}
+#header .container .depth1 li .depth2 li{}
+#header .container .depth1 li .depth2 li a{
+    font-size: 13px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    /* 라인하이트로 굳이 안적어도 되지만 그냥 써봄 */
+    line-height: 40px;
+    text-align: center;
+}
+#header .container .depth1 li .depth2 li:hover a {
+    background-color: red;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* visual */
+#visual {}
+#visual .container {
+    height: 300px;
+    background-color: #F4EAD5;
+}
+/* main */
+#contents {}
+#contents .container{
+    height: 200px;
+    background-color: aquamarine;
+}
+#contents .container .notice{
+    width: 33.333%;
+    height: 200px;
+    background-color: #FFF6BD;
+    float: left;
+}
+#contents .container .gallery{
+    width: 33.333%;
+    height: 200px;
+    background-color: #DAE2B6;
+    float: left;
+}
+#contents .container .banner{
+    width: 33.333%;
+    height: 200px;
+    background-color: #CCD6A6;
+    float: left;
+}
+/* footer */
+#footer {}
+#footer .container{
+    height: 100px;
+    background-color: black;
+}
+#footer .container .logo{
+    background-color: #FF9494;
+    height: 100px;
+    float: left;
+    width: 150px;
+}
+#footer .container .copy{
+    background-color: #FFD1D1;
+    height: 100px;
+    float: left;
+    width: 900px;
+}
+#footer .container .f-site{
+    background-color: #FFE3E1;
+    height: 100px;
+    float: left;
+    width: 150px;
+}

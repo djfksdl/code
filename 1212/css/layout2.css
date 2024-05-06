@@ -1,0 +1,62 @@
+.container {
+    width: 1000px;
+    border: 1px solid black;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0px auto;
+}
+.logo {
+    width: 20%;
+    height: 100px;
+    background-color: green;
+    float: left;
+}
+.menu {
+    width: 80%;
+    height: 100px;
+    background-color: bisque;
+    float: left;
+}
+.clear1 {
+    clear: both;
+}
+.visual {
+    height: 200px;
+    background-color: aquamarine;
+}
+.middle-left {
+    height: 200px;
+    width: 33.333%;
+    background-color: skyblue;
+    float: left;
+}
+.middle {
+    height: 200px;
+    width: 33.333%;
+    background-color: blue;
+    float: left;
+}
+.middle-right {
+    height: 200px;
+    width: 33.333%;
+    background-color: rgb(65, 109, 231);
+    float: left;
+}
+.clear2 {
+    clear: both;
+}
+.footer-left {
+    height: 100px;
+    width: 20%;
+    background-color: gray;
+    float: left;
+}
+.footer-right {
+    height: 100px;
+    width: 80%;
+    background-color: black;
+    float: left;
+}
+.clear3 {
+    clear: both;
+}

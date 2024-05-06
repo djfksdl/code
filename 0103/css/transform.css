@@ -1,0 +1,50 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 200px;
+    margin: 100px auto;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+}
+.transform1 {
+    background-color: darkgreen;
+}
+.transform1:hover {
+    transform: translateX(200px);
+    transform: translateY(200px);
+    transform: translate(200px,200px);
+}
+
+.transform2 {
+    background-color: darkgoldenrod;
+}
+.transform2:hover {
+    transform: rotateX(180deg);
+    transform: rotatey(180deg);
+    transform: rotatez(45deg);
+    /* 디폴트로는 z축으로 평면적으로 돌아감. x,y가 입체적으로 설정할때!*/
+}
+
+.transform3 {
+    background-color: darkcyan;
+}
+.transform3:hover {
+    transform: scaleX(2);
+    transform: scaleY(2);
+    transform: scale(2, 0.5);
+}
+.transform4 {
+    background-color: darkred;
+}
+.transform4:hover {
+    transform: skew(-30deg,30deg);
+    transform: skewX(-30deg);
+    transform: skewY(-30deg);
+}

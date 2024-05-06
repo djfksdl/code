@@ -1,0 +1,78 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+#wrap { width: 100%;}
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container {overflow: hidden;}
+/* 부모에게 주면 높이 잡힌다.너비주면 클리어와 같음.
+ */
+
+.logo {
+    float: left;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    width: 20%;
+}
+nav {float: right; width: 80%;}
+nav ul{ overflow: hidden;}
+nav ul li{
+    float: left;
+    width: 16.6%;
+    /* 6등분한 값 */
+    line-height: 100px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    text-align: center;
+}
+nav ul li:hover {
+    color: #333;
+    text-decoration: underline;
+}
+#content{}
+#content .container{}
+
+#content article{ float: left;
+width: 70%;}
+/* 플롯레프트 하면 너비 잡아줘야함 */
+
+#content article ul{ } 
+#content article ul li{
+    float: left;
+    width: 50%;
+    text-align: center; line-height: 160px; font-size: 2rem;
+}
+#content article ul .no1 {
+    background-color: #ccc;
+}
+#content article ul .no2 {
+    background-color: #eee;
+}
+
+#content aside{float: right; width: 30%; background-color: #333; color: #fff; 
+    text-align: center; line-height: 320px;}
+
+footer {
+    text-align: center ; padding: 50px 0 ; 
+    background-color: #222; color: #eee;
+}
+@media screen and (max-width:768px){
+    .logo, nav, #content article,  #content aside {width: 100%;}
+    /* 반응형에서 개행 안주고 개행같은 개념적용하려면.*/
+    #content article ul li {width: 100%;}
+    #content article ul li:nth-child(2n+1) {background-color: #ccc;}
+    #content article ul li:nth-child(2n) {background-color: #eee;}
+    nav ul li {width:33.333% ; line-height: 50px;}
+    /* 플롯은 너비로 개행을 조정함. */
+}

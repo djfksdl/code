@@ -1,0 +1,9 @@
+.box {
+    background-color: red; /*display: inline*/
+}
+.box1 {
+    display:inline;
+}
+.box2 {
+    display: block;
+}

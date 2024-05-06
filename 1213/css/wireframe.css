@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 초기화 */
+
+.clear {
+    clear: both;
+}
+/* 공통영역 */
+
+.container {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.692);  
+    border: 1px dotted #333;
+    float: left;
+}
+
+.box200 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(23, 23, 199);
+    float: left;
+}
+
+.box400 {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(44, 44, 128, 0.664);
+    float: left;
+}

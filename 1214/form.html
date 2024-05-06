@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>필수입력</legend>
+            <p>
+                <label for="username">이름 : </label>
+                <input type="text" placeholder="성명입력란" required id="username" name="username" minlength="2" maxlength="8">
+            </p>
+            <p>
+                <label for="usermail">이메일 : </label>
+                <input type="email" placeholder="전자우편.." name="umail" id="usermail" required>
+            </p>
+            <p>
+                <label for="userpw">비밀번호</label>
+                <input type="password" id="userpw" name="userpw" required>
+            </p>
+            <input type="submit" value="전송">
+            <input type="reset" value="초기화">
+        </fieldset>
+        
+        
+    </form>
+</body>
+</html>

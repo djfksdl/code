@@ -1,0 +1,191 @@
+@charset 'utf-8';
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+/* 공통영역 */
+.clear::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.3;
+}
+h1,h3 {
+    margin-bottom: 8px;
+}
+h4 {
+    margin: 21px 0;
+}
+
+
+.container {
+    width:900px; 
+    margin: 0 auto;
+    /* padding: 50px 12px; */
+    /* 계속 그 안에 두는거라 공통에 써준다 */
+}
+button {
+    display: block;
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+}
+img {display: block;}
+
+/* header */
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 10px 20px -10px rgb(60, 66, 87,2);
+    position: relative;
+}
+.logo {
+    float: left;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+button {
+    float: right;
+    line-height: 30px;
+    margin-right: 20px;
+    display: block;
+}
+/* nav */
+.header .container {
+    padding: 0 150px;
+    /* position: relative; */
+
+}
+.header .depth1 {
+    /* background-color: white; */
+    /* position: absolute;
+    transform: translateX(-50%); */
+}
+.header .depth1 >li {
+float: left;
+}
+.header .depth1 >li >a{
+display: block;
+width: 150px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+font-size: 14px;
+}
+.header .depth1 >li:hover >a {
+    background-color: red;
+color: #eff2f4;
+font-weight: bold;
+}
+.header .depth1 li .depth2{
+    display: none;
+    background-color: white;
+}
+.header .depth1 >li:hover .depth2 {
+    display: block;
+   
+}
+.header .depth1 li .depth2 li{}
+.header .depth1 li .depth2 li a{
+font-size: 13px;
+display: block;
+width: 150px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+}
+.header .depth1 li .depth2 li:hover a {
+background-color: red;
+color: #eff2f4;
+font-weight: bold;
+}
+/* 메인 영역 */
+/* kitty_puppy */
+.kitty_puppy .photos {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+/* 컨테이너는 공통에 있으니 빼도 됨 */
+.kitty_puppy .photos img {
+    height: 450px;
+    /* 사진 길이가 맞아야함 */
+    float: left;
+}
+.kitty_puppy h1 , .kitty_puppy p {
+    text-align: center;
+}
+/* about kitty */
+.about_kitty {
+    background-color:  #eff2f4;
+    padding-top: 50px;
+}
+.about_kitty .about_nav {
+    float: left;
+    top: 10px;
+    width: 300px;
+    /* height: 780px; */
+    position: sticky;
+}
+.about_kitty .about_nav h3 {
+
+}
+.about_kitty .about_nav .about_nav_item {
+    display: block;
+
+}
+
+.about_kitty .about_content {
+    float: right;
+    width: 550px;
+    /* right써서 50정도 중간에 남기게 됨. left써도 물론 되긴함 */
+    
+}
+.about_kitty .about_content img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin: 5px;
+}
+.about_puppy {
+    background-color:  white;
+    padding-top: 50px;
+}
+.about_puppy .about_nav2 {
+    float: left;
+    width: 300px;
+    position: sticky;
+    top: 10px;
+}
+.about_puppy .about_nav2 h3 {}
+.about_puppy .about_nav2 .about_nav_item2 {
+    display: block;
+}
+
+.about_puppy .about_content {
+    float: right;
+    width: 550px;
+}
+.about_puppy .about_content img {
+    width: 300px;
+    float: left;
+    margin-right: 5px;
+    margin: 20px;
+}

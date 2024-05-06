@@ -1,0 +1,40 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    border: 1px solid;
+    /* width: 200px;
+    height: 200px; */
+    position: relative; 
+    /* position: static; 이거 주면 좌표 줘도 안먹음 이것이 디폴트 값이다. 만약 relative라고 선언 안하면 좌표 줘도 안움직임*/
+}
+img {
+    vertical-align: top;
+    /* display: block; */
+}
+.a {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+}
+.b {
+    background-color: red;
+    left: 100px;
+    top: 100px;
+}
+
+.box1 {
+    width: 600px;
+    height: 300px;
+    background-color: aqua;
+    padding-top: 1px;
+}
+.box2 {
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: top;
+    /* 이미지가 인라인이라 위에 틈 생기는거 없애기 위해서 */
+    /* display: block; 또는 블락 요소로 만들어서 없앰 */
+}
+.slide {
+    width: 100%;
+    height: 600px;
+}
+.slide .slide-wrapper {
+    width: 400%;
+    /* 눈에 안보여도 너비가 잡힐순 있다. */
+    height: 100%;
+    animation: slide 10s infinite;
+    /* 여기서 슬라이드 이루어짐. 슬라이드란 이름은 내가 정한 이름: 10초동안 계속 반복 */
+}
+.slide .slide-wrapper .slide-item {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+.slide .slide-wrapper .slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 왜곡 방지용 */
+}
+@keyframes slide {
+    0%{transform: translate(0);}
+    /* 0초에 안움직인다 */
+    20%{transform: translate(0);}
+    /* 퍼센테이지는 중요하지 않음. 멈추기 위해서 하는것: 10초에서 20프로까지는 멈춰있다 20에서 25까지는 휙 지나간다 */
+    25%{transform: translate(-25%);}
+    /* 왼쪽으로는 - 값주기*/
+    45%{transform: translate(-25%);}
+    50%{transform: translate(-50%);}
+    70%{transform: translate(-50%);}
+    75%{transform: translate(-75%);}
+    95%{transform: translate(-75%);}
+    100%{transform: translate(0);}
+    /* 100프로에는 처음으로 돌아가야하니까 */
+}

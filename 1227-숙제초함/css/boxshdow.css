@@ -1,0 +1,103 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Black.ttf)format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /* 공통구역 */
+h1 {
+    font-family:'roboto';
+    font-weight: 900;
+}
+p {
+    font-family: 'roboto';
+    font-weight: 500;
+}
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right   {
+    float: right;
+}
+
+h1, p {
+    font-size: 20px;
+}
+body {
+    background-color: hsl(50,90%,50%);
+}
+
+.wrap {
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.box1 {
+    width: 260px;
+    height: 100px;
+    margin: 200px auto;
+    text-align: center;
+    background-color: white;
+    /* padding: 5em; */
+    line-height: 100px;
+    /* box-shadow: 0 0 5px -3px red; */
+    margin-right: 20px;
+}
+.box-shadowing {
+    color: blue;
+    box-shadow: 100px 100px 100px black, 100px -100px 100px red, -100px 100px 100px green, -100px -100px 100px purple;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
+
+
+}
+.box2,.box3 {
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    padding: 2em;
+}
+.box-higher {
+    box-shadow: 0 5px 30px 0 rgb(0, 0, 5);
+}
+.box-lower {
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.5);
+
+}
+
+.box3 {
+    margin: 400px auto;
+    /* transform: translate(-50%);
+    물체 높이 너비의 -50%이동 */
+    transform: scale(1);
+    transition: transform: 300ms box-shdow 2s;
+    /* transition: all 2s; 이렇게도 쓸 수 있다 */
+    
+}
+.box3:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5);
+
+}

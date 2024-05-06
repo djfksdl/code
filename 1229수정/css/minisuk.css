@@ -1,0 +1,201 @@
+@charset 'utf-8';
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    vertical-align: top;
+}
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    /* height: 60px; */
+    background-color: #fff;
+}
+/* fixed는 너비 100 분명히 정해줘야지 안그럼 떠있는거라 내용만큼만 너비가 잡힌다. */
+.fixed .navigation {
+    box-shadow: 3px 3px 7px -3px #333;
+}
+.fixed .navigation ul {}
+.fixed .navigation ul li {
+    display: inline-block;
+    /* inine-block 둘다 쓸때 너비도 줘야하니까! */
+    width: 100px;
+}
+.fixed .navigation ul li a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.fixed .navigation ul li a:hover {
+    color: white;
+    background-color: #333;
+}
+
+/* content영역 */
+.content {
+    width: 1100px;
+    height: 920px;
+    margin: 60px auto;
+    background-color: #FFDCFF;
+    position: relative;
+}
+.content .sidebar {
+    width: 170px;
+    height: 750px;
+    background-color: #845EC2;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-shadow: 3px 3px 15px -7px #333;
+}
+.content .sidebar .sticky {
+    position: sticky;
+    top: 70px;
+    width: 170px;
+    height: 450px;
+}
+.content .sidebar .sticky input[type=text]{
+    width: 130px;
+    margin: 20px;
+    padding: 10px;
+    /* 글자와 박스 사이 간격 넓히기위해 */
+    color: #fff;
+    background-color: #333;
+    border: none;
+    outline: none;
+}
+.content .col-left .sidebar .sticky input::placeholder{
+    color: white;
+}
+.content .sidebar .sticky ul li a {
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    /* height주는 개념으로 패딩써도됨 */
+    text-align: center;
+    color: #333;
+}
+.content .col-left .sidebar .sticky ul li a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+/* 베너 영역 */
+.content .banner {
+    width: 650px;
+    height: 550px;
+    background-color: #A178DF;
+    position: absolute;
+    left: 210px;
+    top: 20px;
+    /* position: relative; */
+}
+.content .banner img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.content .banner .heading{
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    /* margin-top: 350px; */
+    /* float: left; */
+}
+.content .banner .heading h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.content .banner .heading p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.content .col-mid .banner .heading p a {
+    padding: 5px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.content .col-mid .banner .heading p a:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+.ribbon_t {
+   
+    width: 100%;
+   
+    background-color: #333;
+}
+.ribbon_b {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background-color: #333;
+}
+.content .profile {
+    width: 650px;
+    height: 280px;
+    background-color: #BE93FD;
+    position: absolute;
+    left: 210px;
+    bottom: 30px;
+}
+.content .forum {
+    width: 200px;
+    height: 450px;
+    background-color: #DCB0FF;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.content .newsletter {
+    width: 200px;
+    height: 400px;
+    background-color: #FACCFF;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+/* footer영역 */
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    padding: 20px;
+}

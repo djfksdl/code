@@ -1,0 +1,53 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap {
+    width: 100%;
+}
+.section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+header {
+    padding: 3rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+article {
+    background-color: #999;
+    /* width: 50%; 로 해도되지만 변경해야함. 아티클 100%로 해줘야함. 그래서 플렉스로 함 */
+    flex:1 0 auto;
+    /* 그대로 0으로 두면 컨텐츠만큼나와서 넓히려면 1대1로 나눠줘야해서 1로 줌. 그리고 줄어들게하려면 1,안줄어들게 하려고하면 0 */
+}
+article .main{
+    padding: 10rem;
+    color: #fff;
+}
+aside {background-color: #333;
+    flex:1 0 auto;
+}
+aside .side{
+    padding: 10rem;
+    color: #fff;
+}
+.footer {
+    background: #ccc;
+    padding: 2rem;
+}
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    
+}

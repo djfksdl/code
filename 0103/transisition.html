@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo img {
+            width: 300px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-delay: .2s;
+            transition-timing-function: ease;
+            transition-timing-function: ease-in ;
+            transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out;
+            /*cubic-bezier  f5로 커스텀해서 복붙하면 적용됨  사이트도 있음  */
+            /* transition: width 2s 1s ease-in-out; */
+            /* 위의 속성 다 합한것이다. */
+            /* transition: width 2s .1s ease-in,
+                        margin-left,2s 1s ease-in-out;
+            transition: all 2s 1s ease-in-out ; */
+        }
+        .photo img:hover {
+            /* event1  */
+            width: 500px;
+             /* event2 */
+            /* margin-left: 200px; */
+           /* event3 */
+           /* opacity:1, */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="photo">
+        <img src="http://placeimg.com/300/300/people" alt="">
+    </div>
+</body>
+</html>

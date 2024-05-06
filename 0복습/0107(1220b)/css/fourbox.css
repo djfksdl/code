@@ -1,0 +1,32 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left {
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.container {
+    width: 1200px;
+    margin: 10px auto;
+}
+.box {
+    border: 2px dashed yellowgreen;
+    border-radius: 15px;
+    margin-right: 10px;
+    width: 290px;
+    height: 290px;
+    float: left;
+}
+.box:last-child {
+    margin-right: 0;
+}
+img {
+    width: 285px;
+    height: 285px;
+    border-radius: 15px;
+}

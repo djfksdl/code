@@ -1,0 +1,65 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.container {
+    width: 900px;
+    margin: 50px auto;
+}
+.box {
+    float: left;
+    border: 1px solid #222;
+    width: 295px;
+    height: 295px;
+    margin: 7.5px 7.5px 7.5px  0;
+    background: url(../images/bg4.jpg) no-repeat;
+    
+}
+.box:nth-child(4),.box:nth-child(7) {
+    margin-right: 0;
+}
+
+#bg1 {
+    background-size: contain;
+    /* 또는 100%해도됨. */
+    width: 900px;
+    height: 600px;
+}
+#bg2 {
+    background-position: left top ;
+    background-size: 900px 600px;
+}
+#bg3 {
+    background-position: center top;
+    background-size: 900px 600px;
+}
+#bg4 {
+    background-position: right top;
+    background-size: 900px 600px;
+}
+#bg5 {
+    background-position: left bottom;
+    background-size: 900px 600px;
+    
+}
+#bg6 {
+    background-position: center bottom;
+    background-size: 900px 600px;
+    
+}
+#bg7 {
+    background-position: right bottom;
+    background-size: 900px 600px;
+    
+}
+.box ~ .box {
+    margin-bottom: 0;
+}
+/* .box ~ .box :첫번째것 다음부터 모든 박스 */

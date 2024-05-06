@@ -1,0 +1,45 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.container {
+    /* width: 1200px; */
+    border-bottom: 1px solid #f3f3f3;
+    margin: 0 auto;
+}
+
+ul{
+    margin: 0 auto;
+    width: 750px;
+}
+
+li{
+    float: left;
+    /* width: 120px;
+    height: 70px; */
+    text-align: center;
+    line-height: 70px;
+    /* padding: 20px 0; 라인하이트로 줘야 a태그에 패딩이 안걸림  */
+    /* background-color: blanchedalmond; */
+    /* border: 1px solid  black; */
+    font-size: 20px;
+    color: #7e8893;
+}
+li:hover{
+    background-color: #cc0000;
+    color: azure;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #7e8893;
+    width: 120px;
+    /* height: 70px; */
+}

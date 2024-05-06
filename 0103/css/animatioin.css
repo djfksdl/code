@@ -1,0 +1,75 @@
+@charset 'utf-8';
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    animation-name: ani;
+    /* 밑에 있는 ani특성 설정이 적용된다. */
+    animation-duration: 3s;
+    animation-iteration-count :2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+    /* 결과대로 멈춘다 다시 원상태로 돌아가는것이 아니라! 반대로 backwards하면 원상태로 돌아간다 무한이랑은 상충되서 안됨 */
+    animation-direction: alternate;
+    /* 2번이상 실행하면 역으로 가는 과정까지 역재생된다.  */
+    /* 통합으로 쓰면 (이름부터 적는다. 콤마하면 안된다. 종합쓸때! 이름과 초는 필수다! 나머지는 디폴트값들이 있어서 선택적으로 적어주면 된다.*/
+    animation: ani 3s infinite alternate-reverse;
+}
+.item:hover {
+    animation-play-state: paused ;
+}
+@keyframes ani {
+    0%{background-color: orange; width:200px;}
+    50% {background-color: orangered; width:300px;}
+    100%{background-color: chocolate; width:400px;}
+}
+.radious {
+    width: 200px ;
+    height: 200px ;
+    background-color: #646;
+    animation: radious 5s alternate 2;
+    /* 이름은 내마음대로 초 역순으로 2번!이라는 뜻 */
+}
+@keyframes radious{
+    0%{border-radius: 0;}
+    25%{border-radius: 50% 0 0 0;}
+    50%{border-radius: 50% 50% 0 0;}
+    75%{border-radius: 50% 50% 50% 0;}
+    75%{border-radius: 50% 50% 50% 50%;}
+}
+.spin {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-top:16px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s infinite;
+
+}
+@keyframes spin {
+    0%{transform:rotate(0);}
+    100%{transform:rotate(360deg);}
+}
+img {
+    width: 50px;
+    position: absolute;
+    /* 기준이 브라우저 전체 */
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: scroll 1s linear infinite;
+}  
+@keyframes scroll {
+    0%{transform: translateY(0) translateX(-50%);}
+    25%{transform: translateY(-10px) translateX(-50%);}
+    50%{transform: translateY(-20px) translateX(-50%);}
+    75%{transform: translateY(-10px) translateX(-50%);}
+    100%{transform: translateY(0px) translateX(-50%);}
+}

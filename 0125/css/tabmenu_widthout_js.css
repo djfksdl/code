@@ -1,0 +1,58 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1400px;
+    margin: 100px auto;
+}
+.tabmenu {
+    width: 100%;
+}
+.tabmenu > * {
+    display: none;
+}
+.tabmenu label {
+    display: inline-block;
+    width: calc(20% - 5px);
+    /* 블록요소면 플롯레프트 해야함. 그때 20%만하면 다 올라와있음 */
+    background-color: #ccc;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #aaa;
+    color: #333;
+    font-size: 15px;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+}
+.tabmenu label:hover {
+    color: #eee;
+}
+.tabmenu div {
+    width: 100%;
+}
+.tabmenu div h3 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+.tabmenu div p {
+    text-align: justify;
+    /* started는 레프트와 비슷? */
+}
+.tabmenu #tab1:checked ~ .tab1-content {
+    display: block;
+}
+.tabmenu #tab2:checked ~ .tab2-content {
+    display: block;
+}
+.tabmenu #tab3:checked ~ .tab3-content {
+    display: block;
+}
+.tabmenu #tab4:checked ~ .tab4-content {
+    display: block;
+}
+.tabmenu #tab5:checked ~ .tab5-content {
+    display: block;
+}

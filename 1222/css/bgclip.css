@@ -1,0 +1,23 @@
+body {
+    background-image: url('../images/onair.png');
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-y; */
+    background-size: cover;
+}
+.desc {
+    background-color: #ffd9a0;
+    border: 5px dotted #222;
+    float: left;
+    width: 350px;
+    margin-right: 20px;
+    padding: 20px;
+}
+#clip-border {
+    background-clip: border-box;
+}
+#clip-padding {
+    background-clip: padding-box;
+}
+#clip-content {
+    background-clip: content-box;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <div>
+                <h2>주문할 상품을 선택해 주세요</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="present3" id="present3">
+                       <label for="present3">선물용 3kg
+                        <input type="number" min="0" max="5" >개 (최대5개)
+                       </label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="present5" id="present5"> 선물용 5kg
+                        <input type="number" min="0" max="5" >개 (최대5개)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="present3" id="present3">
+                       <label for="present3">선물용 3kg
+                        <input type="number" min="0" max="5" >개 (최대5개)
+                       </label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="present51" id="present51">
+                       <label for="present51">선물용 5kg
+                        <input type="number" min="0" max="5" >개 (최대5개)
+                       </label> 
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>포장 선택</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="pack" name="pack" value="pack">
+                            <label for="pack">선물 포장</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="unpack" name="pack" value="unpack">
+                            <label for="unpack">선물 포장 안 함</label>
+                        </li>
+                    </ul>
+            </div>
+                
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="username">이름</label>
+                    <input type="text" name="username" id="username">
+                </li>
+                <li>
+                    <label for="useradd">배송 주소</label>       
+                    <input type="text" name="useradd" id="useradd" >
+                </li>
+                <li>
+                    <label for="useremail">이메일</label>
+                    <input type="email" name="useremail" id="useremail">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="text" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="">배송 지정
+                        <input type="date" name="" id=""> (주문일로부터 최소 3일 이후)
+                    </label>
+                    
+                </li>
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+
+        </fieldset>
+    </form>
+    <button>주문하기</button>
+    <button>취소하기</button>
+</body>
+</html>

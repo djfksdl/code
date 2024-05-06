@@ -1,0 +1,115 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul , li, ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #111111;
+}
+body{
+    color: #111111;
+    font-family: 'Dotum';
+    font-weight: bold;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#wrapper{}
+
+/* 헤더영역 */
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    /* height: 162px; */
+}
+header .container {
+    width: 980px;
+    margin: 0 auto;
+    /* border: 1px solid pink; */
+}
+header .logo-top {
+    /* height: 110px; */
+    /* overflow: hidden; */
+    margin-top: 22px;
+}
+header .logo-top h1{
+    float: left;
+    display: block;
+    
+}
+header .logo-top h1 a{
+    
+}
+header .logo-top h1 a img{
+}
+header .logo-top > ul{
+    /* margin: 10px 0 0 20px; */
+    float: left;
+}
+header .logo-top > ul >li{
+    float: left;
+}
+header .logo-top > ul >li >a{
+    line-height: 28px;
+}
+header .logo-top ul li ul{
+    border: 1px solid #666;
+    border-radius: 0 10px 0 10px;
+}
+header .logo-top ul li ul li{
+    float: left;
+    padding: 0 10px;
+}
+header .logo-top ul li ul li:nth-child(1){
+    border-radius: 0 10px 0 10px;   
+    background-color: #0265b1;
+}
+header .logo-top ul li ul li a {
+    line-height: 28px;
+}
+header .logo-top ul li ul li a:first-child {
+
+}
+
+/* ====헤더 아랫부분 */
+header .logo-bottom {}
+header .logo-bottom .join {
+    border: 1px solid #666;
+    float: left;
+}
+header .logo-bottom .join > li {
+    float: left;
+}
+header .logo-bottom .center {
+    float: right;
+}
+header .logo-bottom .center > li {
+    float: left;
+}
+header .logo-bottom .center > li > a:hover {
+   color: blue;
+}
+
+/* =====네비게이션 영역 =======*/
+header .nav{
+    /* background-color: greenyellow; */
+}
+header .nav > ul{}
+header .nav > ul >li{
+    float: left;
+}
+header .nav > ul >li >a {}
+header .nav > ul .ham-btn {}
+header .nav > ul .ham-btn .line{}
+header .nav > ul .ham-btn .line .btn-line{}
+header .nav > ul .ham-btn .line .line01{}
+header .nav > ul .ham-btn .line .line02{}
+header .nav > ul .ham-btn .line .line03{}

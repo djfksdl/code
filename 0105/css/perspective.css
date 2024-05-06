@@ -1,0 +1,57 @@
+section > div {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 40px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+section >div p {
+    width: 200px;
+    height: 200px;
+    background-color: maroon;
+    margin: 0;
+    transition: all .3s;
+}
+/* prespective 적용하지 않음 */
+
+.container1 .box1:hover .item1{
+    transform: translateX(80px);
+}
+.container1 .box2:hover .item1{
+    transform: translateY(80px);
+}
+.container1 .box3:hover .item1{
+    transform: translateZ(80px);
+}
+
+/* prespective 적용 */
+.container2 .box1:hover .item1{
+    transform: translateX(80px) perspective(200px);
+   
+}
+.container2 .box2:hover .item1{
+    transform:  perspective(200px) translateY(80px);
+}
+.container2 .box3:hover .item1{
+    transform: perspective(200px) translateZ(80px) ;
+}
+
+/* rotate, perspective 적용안함 */
+.container3 .box1:hover .item1{
+    transform: rotateX(45deg);
+}
+.container3 .box2:hover .item1{
+    transform: rotatey(45deg);
+}
+.container3 .box3:hover .item1{
+    transform: rotatez(45deg);
+}
+
+/* rotate, perspective 적용함 */
+.container4 .box1:hover .item1{transform: perspective(200px) rotatex(45deg);}
+.container4 .box2:hover .item1{transform: perspective(200px) rotatey(180deg);}
+.container4 .box3:hover .item1{transform: perspective(200px) rotatez(45deg);}

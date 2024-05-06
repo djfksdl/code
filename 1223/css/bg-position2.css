@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 1100px;
+    margin: 50px auto;
+}
+.box {
+    float: left;
+    border 1px solid #222;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background :skyblue url('../images/bg4.jpg') no-repeat left top;
+    /* background-position: 0,0 left,top에서 시작한다는 뜻, 순서는 대략적으로 이렇게 쓰임 */
+    background-size: 100%;
+    /* 사이즈는 그라운드에서 안되고 따로 줘야한다! */
+}
+#bg1 {background-size: auto;}
+#bg2 {background-size: 200px;}
+#bg3 {background-size: 50%;}
+#bg4 {background-size: 100% 100%;}
+#bg5 {background-size: contain;}
+#bg6 {background-size: cover; background-position: center ;}
+#bg7 {background-a;}

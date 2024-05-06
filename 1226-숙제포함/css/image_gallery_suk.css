@@ -1,0 +1,55 @@
+
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 공통영역 */
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.cover {
+    /* background-color: aquamarine; */
+    padding: 50px 100px 0;
+}
+.colum   {
+    width: 25%;
+    float: left;
+    /* background-color: darkolivegreen; */
+    /* min-width: 500px; */
+    min-height: 250px;
+    max-height: 2000px;
+    overflow: hidden;
+    /* 넘쳐나는걸 자르겠다는 뜻 */
+}
+.wrapper {
+   
+    /* background-color: yellow; */
+    padding: 5px;
+}
+
+.wrapper img {
+   max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0;
+}
+.wrapper h2 {
+    background-color: darkkhaki;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 5px dashed darkolivegreen;
+}
+.wrapper p {
+    background-color: rgb(99, 96, 57);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px ;
+    border: 3px dotted darkkhaki;
+}

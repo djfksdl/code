@@ -1,0 +1,49 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.linear {
+    /* background: linear-gradient(방향,색상 위치, 색상 위치,.... */
+    /* 방향: to bottom(기본값{생략가능} ,to top, to right, to left .. 45deg 90deg */
+    background: linear-gradient(to bottom, #000 0%, #fff 100%);
+    background: linear-gradient(45deg, #000 0%, #fff 100%);
+    background: linear-gradient(to right,#2989cc 0%, #fff 50%, #000 100%);
+    background: linear-gradient(to right,#2989cc 0%, #2989cc 20%, #fff 20%,#fff 80%, #2989cc 80%, #2989cc 100%);
+    /* #2989cc 0%, #2989cc 100% 는 생략 가능하다. 위의 상황에서 시작점 20%지점과 같고 끝점은 80%와 이어질때 생략가능 
+    시작과 끝점은 전 색과 같을때 생략 가능하다*/
+
+    /* 패턴 반복 */
+    background: linear-gradient(to bottom, #2989cc 0%, #2989cc 10%,#fff 10%, #fff 20%, #2989cc 20%, #2989cc 30%,#fff 30%, #fff 40%, #2989cc 40%, #2989cc 50%,#fff 50%, #fff 60%);
+    /*   background: repeating- linear-gradient(to bottom, #2989cc 0%, #2989cc 10%,#fff 10%, #fff 20) 이렇게 해도 반복됨%*/
+}
+
+.radial {
+    /* background: radial-gradient(모양 at중심점 위치, 색상 위치, 색상 위치...); */
+    background: radial-gradient(ellipse at center,#000 0%, #fff 100%);
+    background: radial-gradient(circle at 150px 150px,#000 0%, #fff 100%);
+
+    background: radial-gradient(circle closest-corner at center,#000 0%, #fff 100%);
+    /* 코너가 길이 똑같음. 가장 가까운 코너가 가장 먼 코너다 */
+    background: radial-gradient(circle closest-corner at 50px 50px,#000 0%, #fff 100%);
+    /* 왼쪽위가 반지름이 된다. 가장먼건 시계로 3번째가 제일 멂. */
+    background: radial-gradient(circle farthest-corner at 50px 50px,#000 0%, #fff 100%);
+
+    background: radial-gradient(circle closest-side at 50px 50px,#000 0%, #fff 100%);
+    background: radial-gradient(circle farthest-side at 50px 50px,#000 0%, #fff 100%);
+    background: repeating-radial-gradient(circle closest-corner at 40px 60px,#000 0%, #000 10%, #fff 10%,#fff 20%);
+}

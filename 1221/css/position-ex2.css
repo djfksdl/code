@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .cle::after {
+    display: block;
+    content: '';
+    clear: both;
+} */ 
+
+.container {
+    border: 2px solid green;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.container img {
+    margin-right: 10px;
+    float: left;
+    height: 280px
+}
+
+/* .container p {
+    width: ;
+    float: left;
+} */
+/* .clear {
+    clear: both;
+} */
+.container .project {
+    float: left;
+}
+.container .project a {
+    line-height: 50px;
+    display: block;
+    background-color: #333333;
+    text-align: center;
+}

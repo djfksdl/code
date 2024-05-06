@@ -1,0 +1,34 @@
+body {
+    border: 2px solid red;
+    background-color: greenyellow;
+}
+.c4 {
+    font-size: 2rem;
+    border: 2px solid black;
+}
+.c2 {
+    font-size: 1rem;
+    border: 2px solid black;
+}
+.blue {
+    color: red;
+    font-size: 2em;
+    border: 2px solid blue;
+}
+.blue .c8 {
+    color: black;
+    font-size: 3rem;
+    border: 2px solid ;
+}
+.blue .c2 {
+    color: black;
+}
+.blue2 {
+    border: 2px solid blue;
+    font-size: 2em;
+}
+.blue2 .c16 {
+    color: black;
+    font-size: 2em;
+    border: 2px solid black;
+}

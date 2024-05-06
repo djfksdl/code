@@ -1,0 +1,43 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.clear::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+.container ul{
+    width: 100%;
+
+}
+.container ul li{
+    float: left;
+}
+.container ul li a{
+    color: white;
+    background-color: olivedrab;
+    line-height: 40px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+.container ul li:hover a {
+    background-color: white;
+    color: olivedrab;
+    font-weight: bold;
+}

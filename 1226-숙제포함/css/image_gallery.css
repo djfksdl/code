@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 공통영역 */
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.cover {
+    
+    padding: 50px 100px 0;
+}
+.colum   {
+    width: 33.3333%;
+    float: left;
+    /* background-color: darkolivegreen; */
+    min-width: 300px;
+    min-height: 250px;
+    max-height: 2000px;
+    overflow: hidden;
+    /* 넘쳐나는걸 자르겠다는 뜻 */
+}
+.wrapper {
+   
+    /* background-color: yellowgreen; */
+    padding: 10px;
+}
+
+.wrapper img {
+   max-width: 100%;
+
+}

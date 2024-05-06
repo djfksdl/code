@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container {
+    border: 2px solid red;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+img {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px auto;
+    display: block;
+}
+h2, p {
+    text-align: center;
+    margin: 10px;
+}
+li {
+    margin: 0 50px ;
+}
+h2 {
+    color: rgb(3, 165, 165);
+}
+li:nth-child(1) {
+    color: aquamarine;
+}
+li:nth-child(2) {
+    color: blanchedalmond;
+}

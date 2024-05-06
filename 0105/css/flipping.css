@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+}
+.card__content {
+    text-align: center;
+    padding: 5em;
+    /* padding도 디폰트값 16px 따라서 5em은 80px */
+    background-color: pink;
+    position: relative;
+    perspective: 600px;
+}
+.card__front, .card__back {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    backface-visibility: hidden;
+    /* 뒤에 있는 내용 안보이게 */
+    transition: transform 2s;
+    transform-origin: 30% 50%;
+    /* 0으로 하면 x축의 0지점이라 left,right로 적어도되고 y축지점은 top bottom 로 적어도됨 */
+}
+.card__front {
+    transform: rotateY(0deg);
+    background-color: lightgreen;
+}
+.card__content:hover .card__front {
+    transform: rotateY(180deg);
+}
+.card__back {
+    transform: rotateY(-180deg);
+    background-color: lightblue;
+}
+.card__content:hover .card__back {
+    transform: rotateY(0deg);
+}

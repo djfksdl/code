@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.container {
+    width: 1230px;
+    margin: 0 auto;
+}
+.box {
+    width: 400px;
+    float: left;
+    margin: 5px;
+
+}
+.youtube {
+    width: 400px;
+    height: 227px;
+   border-radius: 5px;
+}
+.text {
+    /* background-color: antiquewhite; */
+    margin-top: 10px;
+    
+}
+.text h2 {
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+.text p {
+    margin-top: 10px;
+    background-color: aquamarine;
+    border-radius: 50px;
+}
+
+

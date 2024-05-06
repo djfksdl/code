@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            /* border-collapse: collapse; */
+            width: 600px;
+        }
+        /* 또는 */
+        table,th,td {
+            border-collapse: collapse;
+            border: 2px solid red;
+        }
+        /* tr {
+            height: 50px;
+        } */
+        /* th, td {
+            height: 50px;
+        } */
+        thead,tbody,tfoot {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="600"   >
+        <thead>
+            <tr>
+            <th width="100px" >NO.</th>
+            <th>Name</th>
+            <th>Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>kim</td>
+                <td rowspan="2" >2400</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lee</td>
+                <!-- <td>2200</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td>Park</td>
+                <td>2600</td>
+            </tr>
+            <tr>
+                <!-- <td>4</td> -->
+                <td colspan="2">Choi</td>
+                <!-- <td>3000</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <!-- <th></th> -->
+                <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil in eos odit inventore molestias excepturi, omnis ipsam a atque tenetur facere rem iusto vel, reprehenderit quod ullam. Harum, non!</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
